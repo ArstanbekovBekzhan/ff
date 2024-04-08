@@ -1,0 +1,22 @@
+.ProductsBtn {
+	position: sticky;
+	background: #fff;
+	top: 50px;
+	left: 0;
+	z-index: 99;
+	transition: all ease-in-out 6ms;
+	button {
+		background: transparent;
+		border: none;
+		border-bottom: 2px solid transparent;
+		margin: 0 10px;
+		font-size: 18px;
+		font-weight: 500;
+		color: gray;
+		margin-bottom: 20px !important;
+	}
+	.active {
+		border-color: #000;
+		color: #000;
+	}
+}

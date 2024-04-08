@@ -1,0 +1,23 @@
+.Products {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	.product {
+		width: calc(100% / 5);
+		height: 100%;
+	}
+	.more {
+		width: 100%;
+		border: none;
+		padding: 20px 0;
+		background: rgb(218, 218, 218);
+		border-radius: 20px;
+		font-size: 20px;
+		font-weight: bold;
+		margin: 20px 0;
+	}
+	.more:hover {
+		background: rgb(190, 190, 190);
+	}
+}

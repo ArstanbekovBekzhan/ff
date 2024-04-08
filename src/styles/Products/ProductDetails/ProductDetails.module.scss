@@ -1,0 +1,146 @@
+.ProductDetails {
+	.top {
+		margin: 20px 0;
+		display: flex;
+		> div {
+			width: 20%;
+		}
+	}
+	.bottom {
+		padding-top: 50px;
+	}
+}
+.imageBox {
+	display: flex;
+	width: 45% !important;
+	.mainImg {
+		padding: 5px 10px;
+		img {
+			width: 500px;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 20px;
+		}
+		.navigationButtons {
+			display: flex;
+			justify-content: space-around;
+			margin: 20px 0;
+			button {
+				min-width: 150px;
+				min-height: 50px;
+				border-radius: 2px;
+				box-shadow: 2px 2px 3px gray;
+			}
+			> :nth-child(1) {
+				background: #000;
+				color: #fff;
+			}
+			> :nth-child(1):disabled {
+				background: #0000005d;
+				box-shadow: none;
+			}
+			> :nth-child(2) {
+				background: var(--main);
+				color: #fff;
+				margin-left: 20px;
+			}
+			> :nth-child(2):disabled {
+				background: #fe262290;
+				box-shadow: none;
+			}
+			button:active {
+				box-shadow: 0.5px 0.5px 0.5px #fff;
+			}
+		}
+	}
+	.choiceImg {
+		height: 500px;
+		width: 150px;
+		overflow-y: scroll;
+		button {
+			padding: 2px;
+			border: 2px solid transparent;
+			border-radius: 8px;
+			overflow: hidden;
+			position: relative;
+			cursor: pointer;
+			width: 60px;
+			height: 70px;
+			display: block;
+			background-size: cover;
+			background-position: center center;
+			margin: 5px auto;
+		}
+	}
+	::-webkit-scrollbar {
+		display: none;
+	}
+}
+.textBox {
+	width: 35% !important;
+	margin: 20px 0;
+
+	h3 {
+		font-size: 17px;
+		font-weight: 600;
+	}
+	p {
+		margin: 20px 0;
+	}
+	padding: 0 20px;
+	.blueText {
+		color: blue;
+	}
+}
+.Sidebar {
+	> div {
+		border: 1px solid #e6eaf0;
+		margin: 10px 0;
+		border-radius: 10px;
+		padding: 10px;
+		background: #fcfcfd;
+	}
+	h3 {
+		color: var(--main);
+		font-size: 25px;
+	}
+	.line {
+		text-decoration-line: line-through;
+		color: gray;
+	}
+	.pieces {
+		text-align: center;
+		margin: 5px 0;
+	}
+	.btns {
+		display: flex;
+		justify-content: space-around;
+		margin: 5px 0;
+		button {
+			width: 40%;
+			padding: 13px 5px;
+			border-radius: 0.5px;
+			border: none;
+			font-weight: 500;
+		}
+		:nth-child(1) {
+			background: #000;
+			color: #fff;
+		}
+		:nth-child(2) {
+			background: var(--main);
+			color: #fff;
+		}
+	}
+	.hashtags {
+		display: flex;
+		flex-wrap: wrap;
+		a {
+			margin: 2px 5px;
+			padding: 5px;
+			background: rgb(238, 238, 238);
+			text-decoration: underline;
+			color: #000;
+		}
+	}
+}
